@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.performancecenter.teamcity.plugin</groupId>
+    <artifactId>com-performancecenter-teamcity-plugin</artifactId>
+    <version>1.0.5</version>
+    <packaging>pom</packaging>
+    <name>OpenText Enterprise Performance Engineering CI</name>
+    <description>This TeamCity plugin enables developers and performance experts to run OpenText Enterprise Performance Engineering performance and load tests as part of CI/CD pipeline. Read more details about it on: </description>
+    <url>https://admhelp.microfocus.com/pc/en/12.57/online_help/Content/PC/Team-City-Plugin.htm</url>
+
+
+    <organization>
+        <name>OpenText Enterprise Performance Engineering CI</name>
+        <url>https://www.microfocus.com/en-us/products/loadrunner-enterprise/overview</url>
+    </organization>
+
+  <properties>
+      <teamcity-version>10.0</teamcity-version>
+  </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>xpp3</groupId>
+            <artifactId>xpp3</artifactId>
+            <version>1.1.4c</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microfocus.adm.performancecenter</groupId>
+            <artifactId>plugins-common</artifactId>
+            <version>1.1.11</version>
+        </dependency>
+    </dependencies>
+
+  <repositories>
+    <repository>
+        <id>JetBrains</id>
+        <url>http://repository.jetbrains.com/all</url>
+    </repository>
+      <repository>
+          <id>jetbrains-all</id>
+          <url>http://download.jetbrains.com/teamcity-repository</url>
+      </repository>
+  </repositories>
+  <pluginRepositories>
+      <pluginRepository>
+          <id>JetBrains</id>
+          <url>http://repository.jetbrains.com/all</url>
+      </pluginRepository>
+  </pluginRepositories>
+  <build>
+      <pluginManagement>
+          <plugins>
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <configuration>
+                      <source>1.6</source>
+                      <target>1.6</target>
+                  </configuration>
+                  <version>3.8.1</version>
+              </plugin>
+          </plugins>
+      </pluginManagement>
+  </build>
+  <modules>
+    <module>com-performancecenter-teamcity-plugin-server</module>
+    <module>com-performancecenter-teamcity-plugin-agent</module>
+    <module>com-performancecenter-teamcity-plugin-common</module>
+    <module>build</module>
+  </modules>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
+  <info>
+    <name>com-performancecenter-teamcity-plugin</name>
+    <display-name>OpenText Enterprise Performance Engineering CI</display-name>
+    <version>1.0.5</version>
+    <description>Enables running OpenText Enterprise Performance Engineering tests</description>
+    <download-url>Plugin download URL</download-url>
+    <vendor>
+      <name>OpenText</name>
+      <url>https://www.opentext.com/products/enterprise-performance-engineering</url>
+    </vendor>
+  </info>
+</teamcity-plugin>
